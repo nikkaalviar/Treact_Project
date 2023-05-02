@@ -13,6 +13,8 @@ html {
 
 body {
     padding: 0 32px;
+    max-width: 1200px;
+    margin: auto;
 }
 
 /* GENERAL */
@@ -233,6 +235,10 @@ nav {
 
 /* QUALITY SECTION */
 
+#quality {
+    padding-bottom: 82px;
+}
+
 .quality__container {
     display: flex;
     padding: 16px 0 16px 0;
@@ -262,4 +268,38 @@ nav {
     opacity: 0.5;
 }
 
+.quality__img--wrapper {
+    position: relative;
+}
+
+.little_dots {
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    z-index: -1;
+    bottom: 0px;
+    right: 0;
+    transform: translate(50%, 50%);
+    fill:  #6316FF;
+}
+
+
 /* STEPS SECTION */
+
+#steps {
+    margin-top: 82px;
+}
+
+.steps__container {
+    display: flex;
+}
+
+.steps__img--wrapper,
+.steps__description {
+    width: 50%;
+}
+
+.steps__img {
+    max-width: 100%;
+
+}
