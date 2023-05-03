@@ -537,3 +537,22 @@ h4 {
     color: white;
     opacity: 0.9;
 }
+
+/* TESTIMONALS SECTION */
+
+.testimonials__container {
+    display: flex;
+}
+
+.client__figure__wrapper {
+    width: 50%;
+    margin-right: 24px;
+}
+
+.testimonials__content__container {
+    width: 50%;
+}
+
+.client__img__logo {
+    width: 100%;
+}
