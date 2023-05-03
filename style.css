@@ -69,13 +69,17 @@ nav {
     font-weight: 600;
 }
 
-.btn-started,
-.quality-btn {
+.btn--started,
+.learn-more--btn {
     border-radius: 9999px;
     border: none;
     background-color: #6316FF;
     color: white;
     font-weight: bold;
+}
+
+.learn-more--btn {
+    padding: 12px 30px;
 }
 
 
@@ -149,7 +153,7 @@ nav {
     opacity: 0.5;
 }
 
-.btn-started {
+.btn--started {
     position: absolute;
     margin-right: 8px;
     padding: 16px 26px;
@@ -259,10 +263,6 @@ nav {
     border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.quality-btn {
-    padding: 12px 30px;
-}
-
 .quality__para {
     margin: 8px 0 32px 0;
     opacity: 0.5;
@@ -350,4 +350,88 @@ nav {
     opacity: 0.15;;
     z-index: -10;
     fill:  #6316FF;
+}
+
+/* VALUES SECTION */
+
+.values__container {
+    display: flex;
+    margin: 32px 0;
+}
+
+.values__content__container,
+.values__img--wrapper,
+.values__offer--wrapper {
+    width: 50%;
+}
+
+.values__content__container {
+    margin-right: 24px;
+}
+
+.values__offer__container {
+    margin: 32px 0;
+}
+
+.values__offer {
+    display: flex;
+    width: 100%;
+}
+
+.values__offer__title__container {
+    display: flex;
+}
+
+.values__img {
+    width: 100%;
+    max-height: 100%;
+}
+
+.values__title {
+    font-size: 16px;
+}
+.values__subtitle {
+    padding: 16px 0;
+}
+
+.values__para {
+    opacity: 0.4;
+    font-weight: 500;
+    margin: 16px 0 24px 0;
+}
+
+.values__logo__container {
+    border-radius: 100%;
+    padding: 8px;
+    margin-right: 8px;
+}
+
+.values__logo__img {
+    height: 1.25rem;
+    width: 1.25rem;
+}
+
+.feather-dollar-sign {
+    color: #276849;
+}
+
+.feather-briefcase {
+    color: #9C2C2C ;
+}
+
+.values__offer__title {
+    display: flex;
+    align-items: center;
+}
+
+.values__offer--wrapper {
+    margin-right: 24px;
+}
+
+.values__offer__content {
+    padding: 16px 0;
+}
+
+.values__offer__content__para {
+    opacity: 0.5;
 }
