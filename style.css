@@ -17,10 +17,15 @@ body {
     margin: auto;
 }
 
+section {
+    padding: 100px 0;
+}
+
 /* GENERAL */
 
 h1 {
-    font-size: 32px;
+    font-size: 42px;
+    font-weight: 800;
 }
 
 h1, p {
@@ -44,8 +49,16 @@ nav {
     display: flex;
 }
 
+p {
+    opacity: 0.5;
+}
+
 .btn {
     cursor: pointer;
+    border-radius: 9999px;
+    border: none;
+    color: white;
+    font-weight: bold;
 }
 
 .nav__container {
@@ -71,11 +84,7 @@ nav {
 
 .btn--started,
 .learn-more--btn {
-    border-radius: 9999px;
-    border: none;
     background-color: #6316FF;
-    color: white;
-    font-weight: bold;
 }
 
 .learn-more--btn {
@@ -84,6 +93,12 @@ nav {
 
 
 /* LANDING */
+
+.header__title {
+    font-size: 32px;
+    font-weight: 700;
+}
+
 .logo__img {
     max-height: 40px;
     max-width: 40px;
@@ -175,8 +190,6 @@ nav {
 .customers__para {
     font-size: 14px;
     font-weight: bold;
-    /* color: #A1AFC0; */
-    opacity: 0.5;
 }
 
 /* FEATURES */
@@ -194,8 +207,7 @@ nav {
 
 
 .features__para {
-    opacity: 0.5;
-    max-width: 50%;
+    max-width: 500px;
     text-align: center;
     margin-bottom: 50px;
 }
@@ -233,7 +245,6 @@ nav {
 
 .feature__para {
     margin-top: 16px;
-    opacity: 0.5;
     font-weight: 500;
 }
 
@@ -265,7 +276,6 @@ nav {
 
 .quality__para {
     margin: 8px 0 32px 0;
-    opacity: 0.5;
 }
 
 .quality__img--wrapper {
@@ -286,9 +296,6 @@ nav {
 
 /* STEPS SECTION */
 
-#steps {
-    margin-top: 82px;
-}
 
 .steps__container {
     display: flex;
@@ -432,6 +439,101 @@ nav {
     padding: 16px 0;
 }
 
-.values__offer__content__para {
+
+/* PRICING SECTION */
+
+.pricing__content__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pricing__option__container {
+    margin-top: 50px;
+}
+
+.pricing__subtitle {
+    padding: 24px 0;
+}
+
+.pricing__para {
+    max-width: 500px;
+    font-weight: 600;
+}
+
+.price__container,
+.pricing__description__container,
+.pricing__container__btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.price__container,
+.pricing__description__container,
+.pricing__container__btn {
+    padding: 24px;
+}
+
+.pricing__row {
+    display: flex;
+}
+
+.pricing__column {
+    width: calc(100%/3);
+    margin: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 -10px 3px 0;
+}
+
+.pricing__description__container {
+    padding: 24px;
+}
+
+.monthly {
     opacity: 0.5;
+}
+
+.price {
+    padding: 16px;
+    font-weight: 700;
+}
+
+.pricing__target {
+    padding: 12px 0;
+}
+
+h4 {
+    opacity: 0.5;
+    padding: 12px 0;
+}
+
+.business__content {
+    opacity: 0.9;
+}
+
+.buy--now1__btn,
+.buy--now2__btn,
+.buy--now3__btn {
+    padding: 18px 42px;
+}
+
+.buy--now1__btn {
+    background-color: #3FB7B1;
+}
+
+.buy--now2__btn {
+    color: #6316FF;
+}
+
+.buy--now3__btn {
+    background-color: #F66C6B;
+}
+
+.business__column {
+    background-color: #6316FF;
+    color: white;
+    opacity: 0.9;
 }
