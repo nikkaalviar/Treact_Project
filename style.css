@@ -935,6 +935,7 @@ footer {
     font-size: 20px;
   }
 
+  .steps__subtitle,
   .steps__description__para {
     text-align: center;
   }
