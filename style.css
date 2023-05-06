@@ -864,7 +864,7 @@ footer {
     text-align: center;
   }
 
-  h3 {
+  h2, h3 {
     text-align: center;
   }
 
@@ -906,16 +906,34 @@ footer {
     justify-content: center;
   }
 
+  .email-address__container {
+    flex-direction: column;
+  }
+
+  .btn--started {
+    width: 100%;
+    position: relative;
+    bottom: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 16px 0px;
+    padding: 24px;
+  }
+
   /* FEATURE SECTION - RESPONSIVE DESIGN (MAXWIDTH=768px) */
 
   .feature {
     width: calc(100%/2);
   }
 
-  .feature__para {
+  .feature__title {
     text-align: left;
   }
 
+  .feature__para {
+    text-align: left;
+  }
 
   /* QUALITY SECTION - RESPONSIVE DESIGN (MAXWIDTH=768px) */
 
@@ -974,7 +992,11 @@ footer {
   }
 
   .steps__number {
+    width: 100%;
+    display: flex;
+    justify-content: center;
     font-size: 32px;
+    padding: 0px 0px 16px 0px;
   }
 
   .steps__description__title {
@@ -1035,7 +1057,7 @@ footer {
   .business__column,
   .enterprise__column {
     width: 100%;
-    max-width: 350px;
+    max-width: 400px;
   }
 
 
@@ -1133,6 +1155,22 @@ footer {
 
   .footer__company-name {
     font-size: 20px;
+  }
+
+
+  /* SMALL PHONES */
+
+  @media (max-width: 480px) {
+
+    .features__wrapper {
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .feature {
+      width: 100%;
+    }
   }
 
 }
