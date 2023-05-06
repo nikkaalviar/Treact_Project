@@ -221,7 +221,6 @@ p {
 
 .features__para {
   max-width: 500px;
-  text-align: center;
   margin-bottom: 50px;
 }
 
@@ -862,6 +861,15 @@ footer {
 
   h1 {
     font-size: 28px;
+    text-align: center;
+  }
+
+  h3 {
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
   }
 
   section, main {
@@ -870,7 +878,9 @@ footer {
 
   .nav__link {
     display: none;
-  }
+  } 
+
+  /* HEADER SECTION - RESPONSIVE DESIGN (MAXWIDTH=768px) */
 
   .header__container {
     flex-direction: column;
@@ -896,14 +906,50 @@ footer {
     justify-content: center;
   }
 
+  /* FEATURE SECTION - RESPONSIVE DESIGN (MAXWIDTH=768px) */
+
   .feature {
     width: calc(100%/2);
   }
+
+  .feature__para {
+    text-align: left;
+  }
+
+
+  /* QUALITY SECTION - RESPONSIVE DESIGN (MAXWIDTH=768px) */
+
+  .quality__container {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .quality__img--wrapper,
+  .quality__description {
+    width: 100%;
+    max-width: 550px;
+    margin-bottom: 52px;
+  }
+
+  .quality__description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .quality__subtitle {
+    margin-top: 24px;
+  }
+
+  
 
   .laptop__little__dots {
     height: 4rem;
     width: 4rem;
   }
+
+
+  /* STEPS SECTION - RESPONSIVE DESIGN (MAXWIDTH=768px) */
 
   .steps__container {
     flex-direction: column;
@@ -939,6 +985,154 @@ footer {
   .steps__subtitle,
   .steps__description__para {
     text-align: center;
+  }
+
+  /* VALUES SECTION - RESPONSIVE DESIGN (MAXWIDTH=768px) */
+  
+  .values__container {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .values__img--wrapper {
+    width: 100%;
+    max-width: 450px;
+    margin-bottom: 48px;
+  }
+
+  .values__content__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 450px;
+  }
+
+  .values__offer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .values__offer--wrapper {
+    width: 100%;
+    max-width: 350px;
+    padding-top: 32px;
+  }
+
+  .values__offer__title__container {
+    justify-content: center;
+  }
+
+
+  /* PRICING SECTION - RESPONSIVE DESIGN (MAXWIDTH=768px) */
+
+  .pricing__row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .personal__column,
+  .business__column,
+  .enterprise__column {
+    width: 100%;
+    max-width: 350px;
+  }
+
+
+  /* PRICING SECTION - RESPONSIVE DESIGN (MAXWIDTH=768px) */
+  
+  .testimonials__container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .client__figure__wrapper {
+    width: 100%;
+    max-width: 450px;
+    margin-bottom: 58px;
+  }
+
+  .testimonials__content__container {
+    width: 100%;
+    max-width: 450px;
+  }
+
+  .testimonials__subtitle {
+    padding: 16px 0px;
+  }
+
+  .client__testimonials__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .rating__para {
+    font-weight: 600;
+  }
+
+
+  /* DEVELOPERS SECTION - RESPONSIVE DESIGN (MAXWIDTH=768px) */
+
+  .developers__container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .developers__content__container {
+    width: 100%;
+    padding: 48px 0px 16px 0px;
+  }
+
+  .buttons__container {
+    width: 100%;
+    justify-content: center;
+    padding: 16px;
+  }
+
+  .btn--start, 
+  .btn--contact {
+    padding: 32px 42px;
+    display: flex;
+    align-items: center;
+  }
+
+
+  /* FOOTER SECTION - RESPONSIVE DESIGN (MAXWIDTH=768px) */
+
+  .top__footer__container {
+    flex-wrap: wrap;
+  }
+
+  .footer__column {
+    width: calc(100%/3);
+    margin-top: 32px;
+  }
+
+  .footer__title {
+    text-align: left;
+    padding-bottom: 18px;
+  }
+
+  .bottom__footer__container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__logo__container,
+  .copyright__container, 
+  .social__media__container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .copyright__container {
+    margin: 32px 0px;
+  }
+
+  .footer__company-name {
+    font-size: 20px;
   }
 
 }
