@@ -35,6 +35,63 @@
             <li class="nav__link login__link">Login</li>
             <li class="nav__link nav__link--primary">Sign Up</li>
           </ul>
+          <button class="btn__menu btn__menu--open" onclick="openMenu()">
+            <svg
+              class="menu--icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+            <div class="menu__backdrop__container">
+              <button class="btn__menu--close" onclick="closeMenu()">
+                <svg
+                  class="light___StyledCloseIcon-sc-lj69nl-14"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <line x1="18" y1="6" x2="6" y2="18"></line>
+                  <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+              </button>
+
+              <ul class="menu__lists">
+                <li class="menu__list">
+                  <a class="menu__link" href="">About</a>
+                </li>
+                <li class="menu__list">
+                  <a class="menu__link" href="">Blog</a>
+                </li>
+                <li class="menu__list">
+                  <a class="menu__link" href="#pricing">Pricing</a>
+                </li>
+                <li class="menu__list">
+                  <a class="menu__link" href="">Contact Us</a>
+                </li>
+                <li class="menu__list">
+                  <a class="menu__link" href="">Login</a>
+                </li>
+                <li class="menu_list sign--up--list">
+                  <a href="" class="menu_link sign--up--link">Sign Up</a>
+                </li>
+              </ul>
+          </div>
         </div>
       </nav>
 
@@ -560,7 +617,10 @@
 
       <section id="developers">
         <div class="developers__container">
-          <svg viewBox="0 0 600 600" class="Decorator GetStarted__DecoratorBlob1">
+          <svg
+            viewBox="0 0 600 600"
+            class="Decorator GetStarted__DecoratorBlob1"
+          >
             <g transform="translate(300,300)">
               <path
                 d="M153.6,-239C199.1,-209.8,236,-167.2,258.4,-118C280.9,-68.9,288.9,-13.1,281.2,40.4C273.5,93.9,250.1,145.2,214.7,186.1C179.3,226.9,131.9,257.4,80,272.6C28.2,287.8,-28.2,287.8,-80,272.6C-131.9,257.4,-179.3,226.9,-214.7,186.1C-250.1,145.2,-273.5,93.9,-281.2,40.4C-288.9,-13.1,-280.9,-68.9,-258.4,-118C-236,-167.2,-199.1,-209.8,-153.6,-239C-108.1,-268.3,-54.1,-284.1,0,-284.1C54.1,-284.1,108.1,-268.3,153.6,-239Z"
@@ -569,7 +629,10 @@
             </g>
           </svg>
 
-          <svg viewBox="0 0 600 600" class="Decorator GetStarted__DecoratorBlob2">
+          <svg
+            viewBox="0 0 600 600"
+            class="Decorator GetStarted__DecoratorBlob2"
+          >
             <g transform="translate(300,300)">
               <path
                 d="M153.6,-239C199.1,-209.8,236,-167.2,258.4,-118C280.9,-68.9,288.9,-13.1,281.2,40.4C273.5,93.9,250.1,145.2,214.7,186.1C179.3,226.9,131.9,257.4,80,272.6C28.2,287.8,-28.2,287.8,-80,272.6C-131.9,257.4,-179.3,226.9,-214.7,186.1C-250.1,145.2,-273.5,93.9,-281.2,40.4C-288.9,-13.1,-280.9,-68.9,-258.4,-118C-236,-167.2,-199.1,-209.8,-153.6,-239C-108.1,-268.3,-54.1,-284.1,0,-284.1C54.1,-284.1,108.1,-268.3,153.6,-239Z"
