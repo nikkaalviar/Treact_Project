@@ -13,7 +13,7 @@ html {
 
 section,
 main {
-  padding: 100px 32px;
+  padding: 50px 32px;
   max-width: 1200px;
   margin: auto;
 }
@@ -37,6 +37,16 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  text-decoration: underline;
+  text-decoration-color: #6316ff;
+  text-decoration-thickness: 2px;
+}
+
+.no-cursor {
+  cursor: not-allowed;
+}
+
 ul {
   list-style: none;
 }
@@ -54,7 +64,7 @@ p {
   opacity: 0.5;
 }
 
-button {
+a, button {
   cursor: pointer;
 }
 
@@ -76,6 +86,7 @@ button {
 
 .nav__links {
   display: flex;
+  align-items: center;
 }
 
 .nav__link {
@@ -84,6 +95,7 @@ button {
   margin: 0 32px;
   font-size: 16px;
   font-weight: 600;
+  color: #000;
 }
 
 .btn--started,
@@ -132,7 +144,7 @@ button {
   fill: none;
   border: none;
   padding: 8px;
-  visibility: hidden;
+  display: none;
 }
 
 .btn__menu--close {
@@ -171,6 +183,7 @@ button {
 
 #landing {
   padding-top: 24px;
+  padding-bottom: 0px;
 }
 
 @keyframes fade__right__animation {
@@ -236,6 +249,11 @@ button {
   font-size: 24px;
   font-weight: 900;
   color: #000;
+}
+
+.company-name:hover {
+  text-decoration: none;
+  color: #6316ff;
 }
 
 .nav__link--primary {
@@ -974,7 +992,7 @@ footer {
 
 /* RESPONSIVE DESIGN */
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   h1 {
     font-size: 28px;
     text-align: center;
@@ -994,22 +1012,18 @@ footer {
     padding: 48px 16px;
   }
 
-  /* NAVIGATION SECTION - RESPONSIVE DESIGN (MAXWIDTH=768px) */
-
-  .nav__container {
-    /* position: relative; */
-  }
+  /* NAVIGATION SECTION - RESPONSIVE DESIGN (MAXWIDTH=992px) */
 
   .nav__link {
     display: none;
   }
 
   .btn__menu--open {
-    visibility: visible;
     display: block;
+    
   }
 
-  /* HEADER SECTION - RESPONSIVE DESIGN (MAXWIDTH=768px) */
+  /* HEADER SECTION - RESPONSIVE DESIGN (MAXWIDTH=992px) */
 
   .header__container {
     flex-direction: column;
@@ -1028,6 +1042,13 @@ footer {
 
   .customers__container {
     margin-top: 48px;
+  }
+
+  .header__img--wraper {
+    width: 100%;
+    max-width: 550px;
+    padding-top: 52px;
+    padding-left: 0px;
   }
 
   .customers__para {
@@ -1050,7 +1071,7 @@ footer {
     padding: 24px;
   }
 
-  /* FEATURE SECTION - RESPONSIVE DESIGN (MAXWIDTH=768px) */
+  /* FEATURE SECTION - RESPONSIVE DESIGN (MAXWIDTH=992px) */
 
   .feature {
     width: calc(100% / 2);
@@ -1064,7 +1085,7 @@ footer {
     text-align: left;
   }
 
-  /* QUALITY SECTION - RESPONSIVE DESIGN (MAXWIDTH=768px) */
+  /* QUALITY SECTION - RESPONSIVE DESIGN (MAXWIDTH=992px) */
 
   .quality__container {
     flex-direction: column-reverse;
@@ -1093,7 +1114,7 @@ footer {
     width: 4rem;
   }
 
-  /* STEPS SECTION - RESPONSIVE DESIGN (MAXWIDTH=768px) */
+  /* STEPS SECTION - RESPONSIVE DESIGN (MAXWIDTH=992px) */
 
   .steps__container {
     flex-direction: column;
@@ -1135,7 +1156,7 @@ footer {
     text-align: center;
   }
 
-  /* VALUES SECTION - RESPONSIVE DESIGN (MAXWIDTH=768px) */
+  /* VALUES SECTION - RESPONSIVE DESIGN (MAXWIDTH=992px) */
 
   .values__container {
     flex-direction: column-reverse;
@@ -1171,7 +1192,7 @@ footer {
     justify-content: center;
   }
 
-  /* PRICING SECTION - RESPONSIVE DESIGN (MAXWIDTH=768px) */
+  /* PRICING SECTION - RESPONSIVE DESIGN (MAXWIDTH=992px) */
 
   .pricing__row {
     flex-direction: column;
@@ -1185,7 +1206,7 @@ footer {
     max-width: 400px;
   }
 
-  /* PRICING SECTION - RESPONSIVE DESIGN (MAXWIDTH=768px) */
+  /* PRICING SECTION - RESPONSIVE DESIGN (MAXWIDTH=992px) */
 
   .testimonials__container {
     flex-direction: column;
@@ -1217,7 +1238,7 @@ footer {
     font-weight: 600;
   }
 
-  /* DEVELOPERS SECTION - RESPONSIVE DESIGN (MAXWIDTH=768px) */
+  /* DEVELOPERS SECTION - RESPONSIVE DESIGN (MAXWIDTH=992px) */
 
   .developers__container {
     flex-direction: column;
@@ -1242,7 +1263,7 @@ footer {
     align-items: center;
   }
 
-  /* FOOTER SECTION - RESPONSIVE DESIGN (MAXWIDTH=768px) */
+  /* FOOTER SECTION - RESPONSIVE DESIGN (MAXWIDTH=992px) */
 
   .top__footer__container {
     flex-wrap: wrap;
